@@ -1,0 +1,6 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold red)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold magenta)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all

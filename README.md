@@ -1,15 +1,15 @@
-IT340 - Circuit Scientifique Bordelais
+# IT340 - Circuit Scientifique Bordelais
 
-# 1 - Specifications
+## 1 - Specifications
 
-## Exigences
+### Exigences
 
-## User stories
+### User stories
 
-# 2 - Conception
+## 2 - Conception
 
-## Architecture globale
+### Architecture globale
 
-## Conception détaillée
+### Conception détaillée
 
-## Diagramme de Gantt
+### Diagramme de Gantt

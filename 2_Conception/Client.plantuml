@@ -1,0 +1,44 @@
+@startuml
+
+Package "Client" {
+
+	[_Accueil_] \
+		as Accueil
+	[_Liste "Mes ateliers"_\nClassé\nLaboratoire] \
+		as MesAteliers
+	[_Liste ateliers_\nClassé\nVisiteurs] \
+		as ListeAteliers
+	[_Compte_\nCréation de compte\nValidation de compte\nIdentification\nModification\nVersion laboratoire\nVersion administrateur] \
+		as Compte
+	[_Gestion atelier_\nAjout\nSuppression\nModification] \
+		as AtelierMngt
+	[_Lieux de restaurations_] \
+		as Restauration
+	[_Metiers recherche_] \
+		as Recherche
+	[_Génération fiche synthetique_] \
+		as Synthese
+	[_Affichage atelier_\nContact laboratoire\nCréneaux libres] \
+		as AffichageAtelier
+	[_Page de validation de compte_\nAdministrateur\nLaboratoire] \
+		as PageValidationCompte
+  [_Demande subvention_] \
+		as Subvention
+}
+
+[Accueil] --> [ListeAteliers]
+[Accueil] --> [Restauration]
+[Accueil] --> [Recherche]
+[Accueil] --> [Compte]
+[Subvention] <- [Accueil]
+
+[Compte] --> [MesAteliers]
+[MesAteliers] --> [AtelierMngt]
+[MesAteliers] -> [AffichageAtelier]
+
+[ListeAteliers] --> [Synthese]
+[ListeAteliers] --> [AffichageAtelier]
+
+Mail -> [PageValidationCompte]
+
+@enduml

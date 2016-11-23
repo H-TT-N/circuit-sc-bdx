@@ -1,0 +1,36 @@
+@startuml
+
+Package "Client" {
+	[Accueil]
+  [Ateliers] as AteliersClient
+	[Compte]
+
+	[Accueil] --> AteliersClient
+	[Accueil] --> [Compte]
+}
+
+Package "Serveur" {
+	[Routage]
+
+	[Données]
+	[Session]
+
+	[Routage] --> [Session]
+	[Routage] -> [Données]
+	[Session] --> [Données]
+}
+
+AteliersClient --> [Routage]
+AteliersClient ..> [Données]
+[Compte] --> [Routage]
+[Compte] ..> [Session]
+
+Package "BDD" {
+	[Comptes]
+	[Ateliers]
+}
+
+[Données] --> [Comptes]
+[Données] --> [Ateliers]
+
+@enduml

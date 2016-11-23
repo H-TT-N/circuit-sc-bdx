@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="IT340 - Tâches - Dépendances" company="AGIL - DA SILVA - NGUYEN - PERROT" webLink="" view-date="2016-11-13" view-index="0" gantt-divider-location="558" resource-divider-location="300" version="2.8.1" locale="en_US">
+    <description/>
+    <view zooming-state="default:1" id="gantt-chart">
+        <field id="tpd3" name="Name" width="303" order="0"/>
+        <field id="tpd4" name="Begin date" width="81" order="1"/>
+        <field id="tpd5" name="End date" width="80" order="2"/>
+        <field id="tpd6" name="Duration" width="72" order="3"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="208" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="129" name="Serveur" meeting="false" start="2016-11-14" duration="21" complete="0" expand="true">
+            <task id="177" name="Router.php" color="#000000" meeting="false" start="2016-11-14" duration="14" complete="0" expand="true">
+                <task id="185" name="Créer les URL d'accès public" color="#8cb6ce" meeting="false" start="2016-11-14" duration="2" complete="0" thirdDate="2016-11-07" thirdDate-constraint="0" expand="true">
+                    <depend id="181" type="2" difference="0" hardness="Strong"/>
+                    <depend id="217" type="2" difference="0" hardness="Strong"/>
+                    <depend id="2491" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2491" name="Convertir les URL en paramètres" color="#8cb6ce" meeting="false" start="2016-11-16" duration="4" complete="0" expand="true"/>
+                <task id="181" name="Gérer les conditions d'accès" color="#8cb6ce" meeting="false" start="2016-11-16" duration="6" complete="0" expand="true">
+                    <depend id="179" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="179" name="Exécuter le module php adéquat" color="#8cb6ce" meeting="false" start="2016-11-22" duration="3" complete="0" expand="true">
+                    <depend id="180" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="180" name="Charger les vues twig" color="#8cb6ce" meeting="false" start="2016-11-25" duration="3" complete="0" expand="true"/>
+                <task id="217" name="Gérer les routes / redirections" color="#8cb6ce" meeting="false" start="2016-11-16" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="202" name="Config.php" color="#000000" meeting="false" start="2016-11-14" duration="1" complete="0" expand="true">
+                <task id="203" name="Lister les valeurs par défaut" color="#8cb6ce" meeting="false" start="2016-11-14" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="130" name="Data.php" color="#000000" meeting="false" start="2016-11-14" duration="21" complete="0" expand="true">
+                <task id="207" name="Data" meeting="false" start="2016-11-14" duration="2" complete="0" expand="true">
+                    <task id="208" name="Implémenter la connexion à la BDD" color="#8cb6ce" meeting="false" start="2016-11-14" duration="1" complete="0" thirdDate="2016-11-07" thirdDate-constraint="0" expand="true">
+                        <depend id="209" type="2" difference="0" hardness="Strong"/>
+                        <depend id="211" type="2" difference="0" hardness="Strong"/>
+                        <depend id="212" type="2" difference="0" hardness="Strong"/>
+                        <depend id="213" type="2" difference="0" hardness="Strong"/>
+                        <depend id="214" type="2" difference="0" hardness="Strong"/>
+                        <depend id="215" type="2" difference="0" hardness="Strong"/>
+                        <depend id="218" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="209" name="Implémenter la déconnexion de la BDD" meeting="false" start="2016-11-15" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="210" name="GetData" meeting="false" start="2016-11-15" duration="4" complete="0" expand="true">
+                    <task id="211" name="Récupérer les données statiques" color="#8cb6ce" meeting="false" start="2016-11-15" duration="2" complete="0" expand="true"/>
+                    <task id="212" name="Récupérer les lieux de restauration" color="#8cb6ce" meeting="false" start="2016-11-15" duration="2" complete="0" expand="true"/>
+                    <task id="213" name="Récupérer les métiers de la recherche" color="#8cb6ce" meeting="false" start="2016-11-15" duration="2" complete="0" expand="true"/>
+                    <task id="214" name="Récupérer les données pour tous les ateliers" color="#8cb6ce" meeting="false" start="2016-11-15" duration="4" complete="0" expand="true"/>
+                    <task id="215" name="Récupérer les créneaux horaires d'un atelier" color="#8cb6ce" meeting="false" start="2016-11-15" duration="4" complete="0" expand="true"/>
+                </task>
+                <task id="216" name="PostData" meeting="false" start="2016-11-15" duration="20" complete="0" expand="true">
+                    <task id="218" name="Ajouter un compte en BDD avec un code" color="#8cb6ce" meeting="false" start="2016-11-15" duration="8" complete="0" expand="true">
+                        <depend id="219" type="2" difference="0" hardness="Strong"/>
+                        <depend id="220" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="219" name="Modifier les informations d'un compte" color="#8cb6ce" meeting="false" start="2016-11-23" duration="2" complete="0" expand="true"/>
+                    <task id="220" name="Ajouter un atelier" color="#8cb6ce" meeting="false" start="2016-11-23" duration="4" complete="0" expand="true">
+                        <depend id="221" type="2" difference="0" hardness="Strong"/>
+                        <depend id="222" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="221" name="Modifier un atelier" color="#8cb6ce" meeting="false" start="2016-11-27" duration="2" complete="0" expand="true"/>
+                    <task id="222" name="Ajouter/modifier les horaires" color="#8cb6ce" meeting="false" start="2016-11-27" duration="4" complete="0" expand="true">
+                        <depend id="223" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="223" name="Ajouter/supprimer les créneaux horaires d'un atelier" color="#8cb6ce" meeting="false" start="2016-12-01" duration="4" complete="0" expand="true"/>
+                </task>
+            </task>
+            <task id="135" name="Session.php" meeting="false" start="2016-11-14" duration="6" complete="0" expand="true">
+                <task id="2462" name="Vérifier l'authentification en cours" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true"/>
+                <task id="136" name="Vérifier les informations de connexion" color="#8cb6ce" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true">
+                    <depend id="137" type="2" difference="0" hardness="Strong"/>
+                    <depend id="2466" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="137" name="Créer la session" color="#8cb6ce" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2466" name="Ajouter le compte en BDD" meeting="false" start="2016-11-18" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="144" name="Workshop.php" meeting="false" start="2016-11-14" duration="9" complete="0" expand="true">
+                <task id="146" name="Vérifier la validité des informations" color="#8cb6ce" meeting="false" start="2016-11-14" duration="3" complete="0" expand="true">
+                    <depend id="167" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="167" name="Synthétiser les données des ateliers" color="#8cb6ce" meeting="false" start="2016-11-17" duration="6" complete="0" expand="true"/>
+            </task>
+            <task id="155" name="Grant.php" meeting="false" start="2016-11-14" duration="6" complete="0" expand="true">
+                <task id="156" name="Vérifier les données des subventions" color="#8cb6ce" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true">
+                    <depend id="157" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="157" name="Traiter les données des subventions" meeting="false" start="2016-11-18" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="159" name="SendMail.php" color="#000000" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true">
+                <task id="160" name="Envoyer un email" color="#8cb6ce" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="2471" name="Client" meeting="false" start="2016-11-14" duration="23" complete="0" expand="true">
+            <task id="2472" name="Développer le menu" color="#8cb6ce" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true">
+                <depend id="2473" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2473" name="Créer l'accueil" color="#8cb6ce" meeting="false" start="2016-11-18" duration="3" complete="0" expand="true">
+                <depend id="2474" type="2" difference="0" hardness="Strong"/>
+                <depend id="2475" type="2" difference="0" hardness="Strong"/>
+                <depend id="2476" type="2" difference="0" hardness="Strong"/>
+                <depend id="2478" type="2" difference="0" hardness="Strong"/>
+                <depend id="2481" type="2" difference="0" hardness="Strong"/>
+                <depend id="2484" type="2" difference="0" hardness="Strong"/>
+                <depend id="2488" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2474" name="Concevoir la page de demande de subvention" color="#8cb6ce" meeting="false" start="2016-11-21" duration="3" complete="0" expand="true"/>
+            <task id="2475" name="Lister les lieux de restauration" color="#8cb6ce" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true"/>
+            <task id="2476" name="Metiers de la recherche" color="#8cb6ce" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true">
+                <task id="2495" name="Gérer l'ajout/modification/suppression" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true"/>
+            </task>
+            <task id="2477" name="Compte administrateur" color="#000000" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true">
+                <task id="2478" name="Créer le formulaire de connexion" color="#8cb6ce" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true"/>
+            </task>
+            <task id="2480" name="Compte laboratoire" color="#000000" meeting="false" start="2016-11-21" duration="16" complete="0" expand="true">
+                <task id="2481" name="Créer le formulaire de création de compte" color="#8cb6ce" meeting="false" start="2016-11-21" duration="6" complete="0" expand="true">
+                    <depend id="2482" type="2" difference="0" hardness="Strong"/>
+                    <depend id="2483" type="2" difference="0" hardness="Strong"/>
+                    <depend id="2485" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2482" name="Créer le formulaire de connexion" color="#8cb6ce" meeting="false" start="2016-11-27" duration="3" complete="0" expand="true"/>
+                <task id="2483" name="Gérer la modification information laboratoire" color="#8cb6ce" meeting="false" start="2016-11-27" duration="5" complete="0" expand="true"/>
+                <task id="2484" name="Lister les ateliers du laboratoire" color="#8cb6ce" meeting="false" start="2016-11-21" duration="2" complete="0" expand="true">
+                    <depend id="2485" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2485" name="Gérer l'ajout/modification/suppression d'atelier" color="#8cb6ce" meeting="false" start="2016-11-27" duration="6" complete="0" expand="true">
+                    <depend id="2486" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2486" name="Gérer l'ajout/modification/suppresion créneau" color="#8cb6ce" meeting="false" start="2016-12-03" duration="4" complete="0" expand="true"/>
+            </task>
+            <task id="2487" name="Liste atelier pour visiteur" color="#000000" meeting="false" start="2016-11-21" duration="12" complete="0" expand="true">
+                <task id="2488" name="Visualiser la liste" color="#8cb6ce" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true">
+                    <depend id="2489" type="2" difference="0" hardness="Strong"/>
+                    <depend id="2490" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2489" name="Lister selon les critères de recherche" color="#8cb6ce" meeting="false" start="2016-11-25" duration="8" complete="0" expand="true"/>
+                <task id="2490" name="Afficher l'atelier (contact/créneaux libres)" color="#8cb6ce" meeting="false" start="2016-11-25" duration="4" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="2497" name="BDD" meeting="false" start="2016-11-14" duration="6" complete="0" expand="true">
+            <task id="2533" name="Mettre en place la base" color="#8cb6ce" meeting="false" start="2016-11-14" duration="4" complete="0" expand="true">
+                <depend id="2513" type="2" difference="0" hardness="Strong"/>
+                <depend id="2541" type="2" difference="0" hardness="Strong"/>
+                <depend id="2544" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2513" name="Créer les différentes tables" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true">
+                <task id="2514" name="Admins" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2515" name="Laboratoires" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2516" name="Ateliers" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2517" name="Zones" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2518" name="Themes" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2519" name="Créneaux" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+                <task id="2520" name="Métiers" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="2541" name="Implémenter les dépendances" color="#8cb6ce" meeting="false" start="2016-11-18" duration="2" complete="0" expand="true"/>
+            <task id="2544" name="Gérer les accès" color="#8cb6ce" meeting="false" start="2016-11-18" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
